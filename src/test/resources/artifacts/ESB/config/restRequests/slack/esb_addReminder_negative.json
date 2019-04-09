@@ -1,0 +1,7 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "apiToken": "%s(apiToken)",
+  "text": "%s(text)",
+  "time": "",
+  "userId": "%s(userId)"
+}

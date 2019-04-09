@@ -1,0 +1,6 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "apiToken": "%s(apiToken)",
+  "includeLables": "%s(includeLables)",
+  "userId": "%s(userId)"
+}

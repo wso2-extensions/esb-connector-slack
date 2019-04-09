@@ -1,0 +1,6 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "apiToken": "%s(apiToken)",
+  "channelId": "%s(channelId)",
+  "purpose": "%s(purpose)"
+}
