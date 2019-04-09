@@ -84,7 +84,6 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         Random rnd8 = new Random();
         char m8 = (char) (rnd8.nextInt(26) + 'a');
         connectorProperties.setProperty("groupName2", m8 + connectorProperties.getProperty("groupName2"));
-
     }
 
     /**
@@ -101,8 +100,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 apiRequestHeadersMap, "api_authTest_mandatory.text");
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
         Assert.assertEquals(apiRestResponse.getHttpStatusCode(), 200);
-        Assert.assertEquals(esbRestResponse.getBody().getString("url"), apiRestResponse.getBody().getString("url")
-        );
+        Assert.assertEquals(esbRestResponse.getBody().getString("url"), apiRestResponse.getBody().getString("url"));
     }
 
     /**
@@ -196,7 +194,6 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         Assert.assertEquals(apiRestResponse.getHttpStatusCode(), 200);
         Assert.assertTrue(esbRestResponse.getBody().has("channel"));
         Assert.assertTrue(apiRestResponse.getBody().has("channel"));
-
     }
 
     /**
