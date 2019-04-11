@@ -5,7 +5,7 @@ The Slack [Connector](https://docs.wso2.com/display/EI640/Working+with+Connector
 
 | Connector version | Supported Slack API version | Supported WSO2 ESB/EI version |
 | ------------- | ------------- | ------------- |
-| [1.0.0](https://github.com/wso2-extensions/esb-connector-slack/tree/org.wso2.carbon.connector.slack-1.0.0) | V1 |  EI 6.4.0    |
+| [1.0.0](https://github.com/wso2-extensions/esb-connector-slack/tree/org.wso2.carbon.esb.connector.slack-1.0.0) | V1 |  EI 6.4.0    |
 
 ## Getting started
 

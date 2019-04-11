@@ -32,7 +32,3 @@ Now that you have connected to Slack, use the information in the following topic
 * To work with Slack groups, See [Working with slack groups](group.md)
 * To work with Slack reminders, See [Working with slack reminders](reminder.md)
 * To work with Slack users, See [Working with slack users](user.md)
-
-
-
-
