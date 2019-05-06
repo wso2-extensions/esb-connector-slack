@@ -194,6 +194,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <scm>
+        <connection>scm:git:https://github.com/wso2-extensions/esb-connector-slack.git
+        </connection>
+        <url>https://github.com/wso2-extensions/esb-connector-slack.git</url>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/esb-connector-slack
+        </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <build>
         <plugins>
             <plugin>

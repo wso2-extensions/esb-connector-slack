@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-> NOTE: To work with the Slack Web Api connector, you need to have a Slack workspace account. If you do not have a Slack workspace account, go to https://slack.com/create#email and create a Slack workspace account.
+> NOTE: To work with the Slack Web API connector, you need to have a Slack workspace account. If you do not have a Slack workspace account, go to https://slack.com/create#email and create a Slack workspace account.
 
 To access the Slack Web API [Register your application](https://api.slack.com/apps) with Slack workspace to obtain credentials to use with [OAuth 2.0](https://api.slack.com/docs/oauth) implementation, which allows you to negotiate a token on behalf of users and workspaces.Your app asks for specific [permission scopes](https://api.slack.com/scopes) and is rewarded with a token upon your approval.
 
