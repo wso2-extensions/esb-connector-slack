@@ -11,7 +11,7 @@ The Slack [Connector](https://docs.wso2.com/display/EI640/Working+with+Connector
 
 #### Download and install the connector
 
-1. Download the connector from the [WSO2 Store]
+1. Download the connector from the [WSO2 Store](https://store.wso2.com/store/assets/esbconnector/details/ffb3980c-0399-4a6a-8632-8a59ce199079) by clicking the Download Connector button.
 2. Then you can follow this [Documentation](https://docs.wso2.com/display/EI640/Working+with+Connectors+via+the+Management+Console) to add and enable the connector via the Management Console in your EI instance.
 3. For more information on using connectors and their operations in your EI configurations, see [Using a Connector](https://docs.wso2.com/display/EI640/Using+a+Connector).
 4. If you want to work with connectors via EI tooling, see [Working with Connectors via Tooling](https://docs.wso2.com/display/EI640/Working+with+Connectors+via+Tooling).
