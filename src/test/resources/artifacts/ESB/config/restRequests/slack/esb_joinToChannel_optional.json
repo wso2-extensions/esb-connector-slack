@@ -1,0 +1,6 @@
+{
+  "apiUrl": "%s(apiUrl)",
+  "apiToken": "%s(apiToken)",
+  "channelName": "%s(channelName)",
+  "validate": "%s(validate)"
+}
