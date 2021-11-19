@@ -126,7 +126,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_createChannel_mandatory.json");
         String cId = esbRestResponse.getBody().getJSONObject("channel").getString("id");
         connectorProperties.setProperty("channelId", cId);
-        String apiEndPoint = apiUrlEndPoint + "/channels.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createChannel_mandatory.text");
         String cId1 = apiRestResponse.getBody().getJSONObject("channel").getString("id");
@@ -148,7 +148,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_createChannel_optional.json");
         String cId = esbRestResponse.getBody().getJSONObject("channel").getString("id");
         connectorProperties.setProperty("channelIdOpt", cId);
-        String apiEndPoint = apiUrlEndPoint + "/channels.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createChannel_optional.text");
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
@@ -166,7 +166,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         String methodName = "createChannel";
         RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURLHttp(methodName),
                 "POST", eiRequestHeadersMap, "esb_createChannel_negative.json");
-        String apiEndPoint = apiUrlEndPoint + "/channels.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createChannel_negative.text");
         Assert.assertEquals(esbRestResponse.getBody().has("error"), apiRestResponse.getBody().has("error"));
@@ -185,7 +185,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_inviteUserToChannel_mandatory.json");
         String cId = esbRestResponse.getBody().getJSONObject("channel").getString("id");
         connectorProperties.setProperty("channelId", cId);
-        String apiEndPoint = apiUrlEndPoint + "/channels.invite";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.invite";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_inviteUserToChannel_mandatory.text");
         String cId1 = apiRestResponse.getBody().getJSONObject("channel").getString("id");
@@ -206,7 +206,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         String methodName = "inviteUserToChannel";
         RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURLHttp(methodName),
                 "POST", eiRequestHeadersMap, "esb_inviteUserToChannel_negative.json");
-        String apiEndPoint = apiUrlEndPoint + "/channels.invite";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.invite";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_inviteUserToChannel_negative.text");
         Assert.assertEquals(esbRestResponse.getBody().has("error"), apiRestResponse.getBody().has("error"));
@@ -379,7 +379,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_createGroup_mandatory.json");
         String cId = esbRestResponse.getBody().getJSONObject("group").getString("id");
         connectorProperties.setProperty("channelId", cId);
-        String apiEndPoint = apiUrlEndPoint + "/groups.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createGroup_mandatory.text");
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
@@ -399,7 +399,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_createGroup_optional.json");
         String cId = esbRestResponse.getBody().getJSONObject("group").getString("id");
         connectorProperties.setProperty("channelIdOpt", cId);
-        String apiEndPoint = apiUrlEndPoint + "/groups.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createGroup_optional.text");
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
@@ -417,7 +417,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         String methodName = "createGroup";
         RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURLHttp(methodName),
                 "POST", eiRequestHeadersMap, "esb_createChannel_negative.json");
-        String apiEndPoint = apiUrlEndPoint + "/groups.create";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.create";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_createChannel_negative.text");
         Assert.assertEquals(esbRestResponse.getBody().has("error"), apiRestResponse.getBody().has("error"));
@@ -435,7 +435,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
                 "POST", eiRequestHeadersMap, "esb_inviteUserToGroup_mandatory.json");
         String cId = esbRestResponse.getBody().getJSONObject("group").getString("id");
         connectorProperties.setProperty("channelId", cId);
-        String apiEndPoint = apiUrlEndPoint + "/groups.invite";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.invite";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_inviteUserToGroup_mandatory.text");
         Assert.assertEquals(esbRestResponse.getHttpStatusCode(), 200);
@@ -454,7 +454,7 @@ public class SlackConnectorIntegrationTest extends ConnectorIntegrationTestBase 
         String methodName = "inviteUserToGroup";
         RestResponse<JSONObject> esbRestResponse = sendJsonRestRequest(getProxyServiceURLHttp(methodName),
                 "POST", eiRequestHeadersMap, "esb_inviteUserToGroup_negative.json");
-        String apiEndPoint = apiUrlEndPoint + "/groups.invite";
+        String apiEndPoint = apiUrlEndPoint + "/conversations.invite";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequest(apiEndPoint, "POST",
                 apiRequestHeadersMap, "api_inviteUserToGroup_negative.text");
         Assert.assertEquals(esbRestResponse.getBody().has("error"), apiRestResponse.getBody().has("error"));

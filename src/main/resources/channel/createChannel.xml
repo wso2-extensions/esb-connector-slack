@@ -46,7 +46,7 @@
         <property name="messageType" value="application/x-www-form-urlencoded" scope="axis2" type="STRING"/>
         <call>
             <endpoint>
-                <http method="POST" uri-template="{uri.var.apiUrl}/api/channels.create"/>
+                <http method="POST" uri-template="{uri.var.apiUrl}/api/conversations.create"/>
             </endpoint>
         </call>
     </sequence>
