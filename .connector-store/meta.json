@@ -1,0 +1,13 @@
+{
+    "name": "Slack",
+    "owner": "WSO2",
+    "category": "Communication",
+    "documentationUrl": "https://github.com/wso2-extensions/esb-connector-slack/blob/release-1.0.0/README.md",
+    "description": "The Slack Connector provides a quick and easy way to communicate with your teammates in slack. It allows you to  access the Slack Web API, which is an interface for querying information from and enacting change in a Slack workspace.",
+    "status": "Active",
+    "labels": [
+        "application",
+        "communication"
+    ],
+    "releases": []
+}
