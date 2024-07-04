@@ -6,17 +6,17 @@
     "description": "The Slack Connector provides a quick and easy way to communicate with your teammates in slack. It allows you to  access the Slack Web API, which is an interface for querying information from and enacting change in a Slack workspace.",
     "status": "Active",
     "labels": [
-        "application",
         "communication"
     ],
     "releases": [
         {
-            "tagName": "1.0.0",
+            "tagName": "v1.0.0",
             "products": [
                 "EI 7.0.x",
                 "EI 6.6.0",
                 "EI 6.4.0"
-            ]
+            ],
+            "isHidden": false
         }
     ]
 }
